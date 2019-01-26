@@ -1,0 +1,26 @@
+{
+  "name": "project-1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CupidsTrick/independent_one.git"
+  },
+  "author": "Miguel Bento",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CupidsTrick/independent_one/issues"
+  },
+  "homepage": "https://github.com/CupidsTrick/independent_one#readme",
+  "description": ""
+}
