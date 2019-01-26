@@ -7,9 +7,10 @@ function initMap() {
     var options = {
         zoom: 7,
         center: {
-            lat: 48.8566,
-            lng: 2.3522
+            lat: 46.2276,
+            lng: 2.2137
         }
     }
     // New Map
     var map = new google.maps.Map(document.getElementById("map"), options);
+}
