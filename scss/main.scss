@@ -1,18 +1,38 @@
-$bg-color:#373e56;
-$p-color:#bcb8ee;
-$s-color:#7677d4;
-$t-color:#494d87;
-$q-color:#3c4674;
+@import 'config';
+
+$bg-color:#343a40;
 $white: #ccc;
 
 body {
     background: $bg-color;
-    color: $ccc;
+    color: $white;
     margin: 0;
-    height: 100vh;
-
 }
 
 .carousel {
-    align-self: auto;
+    width: 100%;
+    max-width: 1450px;
+    margin: auto;
 }
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+@import 'mobile';
