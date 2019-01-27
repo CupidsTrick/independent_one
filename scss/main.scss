@@ -1,23 +1,83 @@
 @import 'config';
 
-$bg-color:#343a40;
-$white: #ccc;
+$bg-color:#E1F1EF;
+$color: #343a40;
+$s-color:#C78200;
+$t-color:#703900;
+
+* {
+    text-decoration: none;
+}
+
+.row {
+    display: grid;
+    grid-template-areas:
+        "studioA"
+        "studioB"
+        "studioC"
+        "studioD"
+        "studioF";
+    grid-template-columns: repeat(2fr);
+
+
+}
 
 body {
     background: $bg-color;
-    color: $white;
+    color: $color;
     margin: 0;
+    overflow: auto;
+}
+
+/*
+.site {
+    header {
+        .navbar {
+            .nav-link:hover {
+                @include ease();
+
+                &:hover {
+                    color: $s-color;
+                }
+            }
+        }
+    }
+}
+*/
+main {
+    .container {
+        .row {
+            a {
+                text-decoration: none;
+                color: $color;
+                @include ease();
+
+                &:hover {
+                    color: $s-color;
+                }
+            }
+        }
+    }
+}
+
+h1,
+.footer {
+    margin-bottom: 0;
+    color: $bg-color;
 }
 
 .carousel {
-    width: 100%;
     max-width: 1450px;
     margin: auto;
 }
 
-.page-footer {
-    position: absolute;
-    bottom: 0;
+// Map
+.nav-link:hover {
+    cursor: pointer;
+}
+
+footer {
+    color: $color;
 }
 
 .map-container {
@@ -25,14 +85,17 @@ body {
     padding-bottom: 56.25%;
     position: relative;
     height: 0;
+
+    iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
 }
 
-.map-container iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
+// End of map
 
 @import 'mobile';

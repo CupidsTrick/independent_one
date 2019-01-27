@@ -1,29 +1,65 @@
+* {
+  text-decoration: none; }
+
+.row {
+  display: grid;
+  grid-template-areas: "studioA" "studioB" "studioC" "studioD" "studioF";
+  grid-template-columns: repeat(2fr); }
+
 body {
-  background: #343a40;
-  color: #ccc;
-  margin: 0; }
+  background: #E1F1EF;
+  color: #343a40;
+  margin: 0;
+  overflow: auto; }
+
+/*
+.site {
+    header {
+        .navbar {
+            .nav-link:hover {
+                @include ease();
+
+                &:hover {
+                    color: $s-color;
+                }
+            }
+        }
+    }
+}
+*/
+main .container .row a {
+  text-decoration: none;
+  color: #343a40;
+  transition: all 0.5s ease 0s; }
+  main .container .row a:hover {
+    color: #C78200; }
+
+h1,
+.footer {
+  margin-bottom: 0;
+  color: #E1F1EF; }
 
 .carousel {
-  width: 100%;
   max-width: 1450px;
   margin: auto; }
 
-.page-footer {
-  position: absolute;
-  bottom: 0; }
+.nav-link:hover {
+  cursor: pointer; }
+
+footer {
+  color: #343a40; }
 
 .map-container {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
   height: 0; }
-
-.map-container iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute; }
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
 
 @media screen and (max-width: 500px) {
   .carousel {

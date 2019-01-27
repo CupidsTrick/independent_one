@@ -13,10 +13,10 @@
     <title>Project A</title>
 </head>
 
-<body>
+<body class="site">
     <div>
         <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
                 <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,16 +41,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">About Us</a>
                         </li>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modalGM">Find
-                                Us!</button>
-                        </div>
-                        <!--Modal: Name-->
-                        <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-md" role="document">
-                            </div>
-                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Location</a>
+                        </li>
                         <!--Modal: Name-->
                         <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true">
@@ -85,10 +78,8 @@
             </nav>
         </header>
     </div>
-
-    <main>
+    <main class="content">
         <h1 class="text-center display-4 bg-dark">Welcome to Banana Studios</h1>
-
         <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -103,35 +94,22 @@
             </div>
         </div>
 
-    </main>
-    <footer class="page-footer font-small teal pt-4 bg-dark">
-        <div class="container-fluid text-center text-md-left">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase font-weight-bold">Footer text 1</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita sapiente sint, nulla,
-                        nihil
-                        repudiandae commodi voluptatibus corrupti animi sequi aliquid magnam debitis, maxime quam
-                        recusandae harum esse fugiat. Itaque, culpa?</p>
-                </div>
-                <hr class="clearfix w-100 d-md-none pb-3">
-                <div class="col-md-6 mb-md-0 mb-3">
-                    <h5 class="text-uppercase font-weight-bold">Footer text 2</h5>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio deserunt fuga perferendis
-                        modi
-                        earum commodi aperiam temporibus quod nulla nesciunt aliquid debitis ullam omnis quos
-                        ipsam,
-                        aspernatur id excepturi hic.</p>
-                </div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
+                <div class="w-100"></div>
+                <div class="col">Column</div>
+                <div class="col">Column</div>
             </div>
         </div>
 
-        <div class="footer-copyright text-center py-3">© 2019 Copyright:
-            <a href="#"> website.com</a>
-        </div>
-
+    </main>
+    <footer>
+        <nav class="navbar fixed-bottom py-1 navbar-dark bg-dark">
+            <p class="footer">&copy; Miguel Bento 2019</p>
+        </nav>
     </footer>
-
 
     <!--JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
