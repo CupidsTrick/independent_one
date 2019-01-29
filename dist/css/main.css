@@ -1,35 +1,46 @@
 * {
-  text-decoration: none; }
+  text-decoration: none;
+  box-sizing: border-box; }
 
 .row {
-  display: grid;
-  grid-template-areas: "studioA" "studioB" "studioC" "studioD" "studioF";
-  grid-template-columns: repeat(2fr); }
+  /*
+    display: grid;*/
+  /*
+    grid-template-areas:
+        "studioA studioB"
+        "studioC studioD"
+        "studioD studioF";
+        */
+  grid-template-columns: repeat(2, 1fr); }
 
 body {
-  background: #E1F1EF;
-  color: #343a40;
+  background: #343a40;
+  color: #E1F1EF;
   margin: 0;
+  padding: 0;
   overflow: auto; }
 
-/*
-.site {
-    header {
-        .navbar {
-            .nav-link:hover {
-                @include ease();
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px; }
 
-                &:hover {
-                    color: $s-color;
-                }
-            }
-        }
-    }
-}
-*/
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px; }
+
+.site header .navbar {
+  font-size: 1.2rem; }
+  .site header .navbar .nav-link:hover {
+    transition: all 0.5s ease 0s; }
+    .site header .navbar .nav-link:hover:hover {
+      color: #C78200; }
+
 main .container .row a {
   text-decoration: none;
-  color: #343a40;
+  color: #E1F1EF;
   transition: all 0.5s ease 0s; }
   main .container .row a:hover {
     color: #C78200; }
@@ -37,17 +48,13 @@ main .container .row a {
 h1,
 .footer {
   margin-bottom: 0;
-  color: #E1F1EF; }
+  color: #343a40; }
 
-.carousel {
-  max-width: 1450px;
-  margin: auto; }
+h1 {
+  padding-bottom: 3rem; }
 
 .nav-link:hover {
   cursor: pointer; }
-
-footer {
-  color: #343a40; }
 
 .map-container {
   overflow: hidden;

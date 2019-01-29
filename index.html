@@ -9,11 +9,15 @@
         crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
         crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
     <link rel="stylesheet" href="/dist/css/main.css">
     <title>Project A</title>
 </head>
 
 <body class="site">
+
     <div>
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -78,35 +82,51 @@
             </nav>
         </header>
     </div>
-    <main class="content">
-        <h1 class="text-center display-4 bg-dark">Welcome to Banana Studios</h1>
-        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/dist/media/mesa.jpg" class="d-block w-100" alt="Mixing">
-                </div>
-                <div class="carousel-item">
-                    <img src="/dist/media/bass.jpeg" class="d-block w-100" alt="Bass">
-                </div>
-                <div class="carousel-item">
-                    <img src="/dist/media/mic.jpeg" class="d-block w-100" alt="Mic">
-                </div>
+
+    <main>
+        <!--Slider-->
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/1)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/2)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/6)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/7)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/8)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/9)"></div>
+                <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/10)"></div>
             </div>
+
+            <div class="swiper-pagination"></div>
         </div>
 
+        <!--Slider-->
         <div class="container">
             <div class="row">
-                <div class="col">Column</div>
-                <div class="col">Column</div>
+                <div class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, quos. Lorem ipsum
+                    dolor
+                    sit amet consectetur adipisicing elit. Incidunt doloribus eaque accusantium libero eos corporis
+                    optio
+                    adipisci! Ratione, id tempora! Qui!</div>
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum eveniet ea alias
+                    tempora
+                    voluptatisi, officia amet!</div>
                 <div class="w-100"></div>
-                <div class="col">Column</div>
-                <div class="col">Column</div>
+                <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus quo esse
+                    onsequatur
+                    soluta quae, consectetur harum aliquid possimus adipisci.</div>
+                <div class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nisi omnis,
+                    provident
+                    modi voluptates laudantium.</div>
             </div>
         </div>
 
     </main>
     <footer>
-        <nav class="navbar fixed-bottom py-1 navbar-dark bg-dark">
+        <nav class="navbar fixed-bottom bg-light">
             <p class="footer">&copy; Miguel Bento 2019</p>
         </nav>
     </footer>
@@ -118,7 +138,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+
 </body>
 
 </html>
