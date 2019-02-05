@@ -132,8 +132,9 @@
                 <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
             <div class="container headers" onclick="copiedToClipboard()">
-                <p id="phone-number" onclick="copyToClipboard('#phone-number')">
-                    +33 59 74 86 21<span id="number-copied" data-toggle="tooltip" data-placement="top" title="Number copied to clipboard">
+                <p id="phone-number" onclick="copyToClipboard('#phone-number')" data-toggle="tooltip" data-placement="left"
+                    title="Click to Copy">
+                    +33 59 74 86 21<span id="number-copied">
                         Copied!</span>
                 </p>
 
@@ -157,9 +158,14 @@
         $('.carousel').carousel({
             interval: 2000
         })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
         // Clipboard
+        const numberCopied = document.getElementById("number-copied");
+
         function copiedToClipboard() {
-            document.getElementById("number-copied").style.display = "initial";
+            numberCopied.style.display = "initial";
         }
 
         function copyToClipboard(element) {
@@ -170,12 +176,19 @@
             $temp.remove();
         }
         // End of Clipboard
-
-        var s = document.getElementById("number-copied").style;
-        s.opacity = 1;
-        (function fade() {
-            (s.opacity -= .19) < 0 ? s.display = "none" : setTimeout(fade, 700)
-        })();
+        function fadeOutEffect() {
+            var fadeEffect = setInterval(function () {
+                if (!numberCopied.style.opacity) {
+                    numberCopied.style.opacity = 1;
+                }
+                if (numberCopied.style.opacity > 0) {
+                    numberCopied.style.opacity -= 0.1;
+                } else {
+                    clearInterval(fadeEffect);
+                }
+            }, 200);
+        }
+        numberCopied.addEventListener('mouseup', fadeOutEffect);
     </script>
 </body>
 
