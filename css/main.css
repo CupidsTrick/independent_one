@@ -8,10 +8,7 @@
 
 #bg {
   background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed;
-  background-position: center;
-  -moz-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover; }
+  background-position: center; }
 
 body {
   color: #343a40;
@@ -99,7 +96,14 @@ main .container .row a {
   margin-left: auto; }
 
 @media screen and (max-width: 500px) {
-  background-attachment: initial;
+  #bg {
+    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat 50% 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; }
   #navbar {
     display: block; } }
 
