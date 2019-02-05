@@ -125,7 +125,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="container icons">
                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
@@ -133,12 +132,10 @@
             </div>
             <div class="container headers" onclick="copiedToClipboard()">
                 <p id="phone-number" onclick="copyToClipboard('#phone-number')" data-toggle="tooltip" data-placement="left"
-                    title="Click to Copy">
+                    title="Click number to copy">
                     +33 59 74 86 21<span id="number-copied">
-                        Copied!</span>
+                    </span>
                 </p>
-
-
             </div>
         </div>
         <br><br>
@@ -188,7 +185,7 @@
                 }
             }, 200);
         }
-        numberCopied.addEventListener('mouseup', fadeOutEffect);
+        numberCopied.addEventListener('click', fadeOutEffect);
     </script>
 </body>
 
