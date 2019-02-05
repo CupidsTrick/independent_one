@@ -95,7 +95,12 @@ main .container .row a {
 
 @media screen and (max-width: 500px) {
   #navbar {
-    display: block; } }
+    display: block; }
+  html,
+  body {
+    background-position: inherit;
+    background-size: contain;
+    background: fixed; } }
 
 .card {
   margin: 1rem auto 0.5rem auto; }
