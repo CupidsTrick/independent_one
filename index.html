@@ -130,6 +130,7 @@
                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <p onclick="ClipBoard()" id="CopyText" class="headers">+33 45 74 95 62</p>
             </div>
         </div>
         <br><br>
@@ -149,6 +150,13 @@
         $('.carousel').carousel({
             interval: 2000
         })
+
+        function ClipBoard() {
+            const copyTxt = document.getElementById("CopyText");
+            copyTxt.select();
+            document.execCommand("copy");
+
+        }
     </script>
 </body>
 

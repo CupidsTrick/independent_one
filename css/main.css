@@ -7,8 +7,7 @@
   color: #e1f1ef; }
 
 #bg {
-  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed;
-  background-position: center; }
+  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed center; }
 
 body {
   color: #343a40;
@@ -72,21 +71,16 @@ main .container .row a {
   .icons:hover, .icons a:hover {
     color: #cb902e;
     transition: all 0.5s ease 0s; }
-
-.icons, .icons a:hover {
-  color: #343a40;
-  margin-right: 0.5rem; }
-  .icons:hover, .icons a:hover {
-    color: #cb902e;
-    transition: all 0.5s ease 0s; }
   .icons a, .icons a:hover a {
     color: #e1f1ef;
     margin-right: 0.5rem; }
 
-.mainTable:hover {
+.mainTable:hover,
+.headers:hover {
   cursor: default; }
 
-.mainTable table {
+.mainTable table,
+.headers table {
   border-radius: 10px; }
 
 .footer {
@@ -97,13 +91,8 @@ main .container .row a {
 
 @media screen and (max-width: 500px) {
   #bg {
-    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat 50% 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1; }
+    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studioIOS.jpeg);
+    background-attachment: scroll; }
   #navbar {
     display: block; } }
 
