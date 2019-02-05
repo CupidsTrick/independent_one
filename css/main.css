@@ -7,7 +7,8 @@
   color: #e1f1ef; }
 
 body {
-  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed;
+  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat;
+  background-attachment: fixed;
   color: #343a40;
   width: 100%;
   margin: 0;
@@ -93,6 +94,8 @@ main .container .row a {
   margin-left: auto; }
 
 @media screen and (max-width: 500px) {
+  body {
+    background-attachment: fixed; }
   #navbar {
     display: block; } }
 
