@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="./media/bootstrap/bootstrap.css">
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/dist/css/main.css">
-    <title>Project A</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Studio Page</title>
 </head>
 
-<body>
+<body class="bg">
+
     <div>
         <header>
             <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -42,7 +42,7 @@
                             <a class="nav-link" href="contact.html">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Location</a>
+                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
                         </li>
                         <!--Modal: Name-->
                         <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
@@ -60,6 +60,7 @@
                                         </div>
                                     </div>
                                     <!--Footer-->
+                                    <p class="map-text">Rue de Rivoli, 75001 Paris</p>
                                     <div class="modal-footer justify-content-center">
                                         <button type="button" class="btn btn-primary btn-md">Save location
                                             <i class="fas fa-map-marker-alt ml-1"></i>
@@ -79,52 +80,65 @@
         </header>
     </div>
 
-    <main>
-        <div class="container">
-            <div class="row ">
-                <div class="col studioA"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio A</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioA.jpeg" alt="Studio A">
-                    </a>
+    <main class="container">
+        <h1 class="container text-center headers display-4 p-2 border-bottom">Welcome to Duke's Studios</h1>
+        <!--Carousel Header-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video src="./media/blur.mp4" autoplay loop class="d-block w-100 myVideo" alt="...">
                 </div>
-                <div class="col studioB"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio B</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioB.jpeg" alt="Studio B">
-                    </a>
+                <div class="carousel-item">
+                    <video src="./media/mic.mp4" autoplay loop class="d-block w-100 myVideo" alt="...">
                 </div>
-                <div class="w-100"></div>
-                <div class="col studioC"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio C</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioC.jpeg" alt="Studio C">
-                    </a>
-                </div>
-                <div class="col studioD"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio D</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioA.jpeg" alt="Studio D">
-                    </a>
-                </div>
-                <div class="w-100"></div>
-                <div class="col studioE"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio E</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioC.jpeg" alt="Studio E">
-                    </a>
-                </div>
-                <div class="col studioF"><a href="studioA.html" target="_blank" rel="noopener noreferrer">
-                        <h4>Studio F</h4>
-                        <img class="studio rounded img-fluid" src="./dist/media/studioA.jpeg" alt="Studio F">
-                    </a>
+                <div class="carousel-item">
+                    <video src="./media/peopl.mp4" autoplay loop class="d-block w-100 myVideo" alt="...">
                 </div>
             </div>
         </div>
+        <h1 class="text-center headers mt-3">
+            Find The Studio That Fulfills Your Needs
+        </h1>
+        <!--End of Carousel Header-->
+        <!--Carousel Cards-->
 
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <img src="./media/studios/studioE.jpg" alt="John" style="width:100%">
+                        <div class="card-body">
+                            <h1>New Studios</h1>
+                            <p class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ipsum
+                                recusandae incidunt ut dignissimos sit voluptatum sequi similique possimus unde?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <img src="./media/carousel/2.jpeg" class="card-img-top" alt="John" style="width:100%">
+                        <div class="card-body">
+                            <h1 class="card-title">Top Quality Gear</h1>
+                            <p class="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae nemo
+                                eos vero ducimus quasi adipisci in nam illum doloribus nesciunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container icons">
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+        <br><br>
     </main>
     <footer>
-        <nav class="navbar fixed-bottom navbar-dark py-1 bg-dark">
-            <p class="footer">&copy; Miguel Bento 2019</p>
+        <nav class="navbar fixed-bottom bg-dark">
+            <p class="footer text-center">&copy; Miguel Bento 2019</p>
         </nav>
     </footer>
-
-    <!--JS-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
@@ -133,7 +147,7 @@
         crossorigin="anonymous"></script>
     <script>
         $('.carousel').carousel({
-            interval: 3000
+            interval: 2000
         })
     </script>
 </body>

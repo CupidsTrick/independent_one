@@ -1,33 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+$bg-color: #343a40;
+$color: #e1f1ef;
+$s-color: #cb902e;
+$t-color: #703900;
+$bg: linear-gradient(rgba($bg-color, 0.8),
+rgba($bg-color, 0.8)),
+url(../media/studio.jpeg) no-repeat fixed;
+
 @mixin ease {
-    transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 @mixin mediaXs {
-    @media screen and (max-width: 350px) {
-        @content;
-    }
+  @media screen and (max-width: 350px) {
+    @content;
+  }
 }
 
 @mixin mediaSm {
-    @media screen and (max-width: 500px) {
-        @content;
-    }
+  @media screen and (max-width: 500px) {
+    @content;
+  }
 }
 
 @mixin mediaMd {
-    @media screen and (max-width: 768px) {
-        @content;
-    }
+  @media screen and (max-width: 768px) {
+    @content;
+  }
 }
 
 @mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px) {
-        @content;
-    }
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
 }
 
 @mixin mediaXl {
-    @media screen and (min-width: 1171px) {
-        @content;
-    }
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
 }

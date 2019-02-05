@@ -1,117 +1,135 @@
-@import 'config';
-
-$bg-color:#343a40;
-$color: #E1F1EF;
-$s-color:#C78200;
-$t-color:#703900;
+@import "config";
+@import "modal";
 
 * {
-    text-decoration: none;
-    box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-.row {
-    /*
-    display: grid;*/
-    /*
-    grid-template-areas:
-        "studioA studioB"
-        "studioC studioD"
-        "studioD studioF";
-        */
-    grid-template-columns: repeat(2, 1fr);
+.headers {
+  color: $color;
 }
 
 body {
-    background: $bg-color;
-    color: $color;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+  color: $bg-color;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: 'Work Sans', sans-serif;
 }
 
-.swiper-container {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
+.bg {
+  background: $bg;
 }
 
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 300px;
-    height: 300px;
-    border-radius: 5%;
+.carousel {
+
+  .carousel-inner {
+    height: 35vh;
+  }
 }
 
-.swiper-slide-active {
-    width: 320px;
-    height: 320px;
-}
+.bg {
+  header {
+    .navbar {
 
-.site {
-    header {
-        .navbar {
-            font-size: 1.2rem;
+      .nav-link:hover {
+        @include ease();
 
-            .nav-link:hover {
-
-                @include ease();
-
-                &:hover {
-                    color: $s-color;
-                }
-            }
+        &:hover {
+          color: $s-color;
         }
+      }
     }
+  }
 }
 
 main {
-    .container {
-        .row {
-            a {
-                text-decoration: none;
-                color: $color;
-                @include ease();
-
-                &:hover {
-                    color: $s-color;
-                }
-            }
-        }
+  .container {
+    .row {
+      a {
+        text-decoration: none;
+        color: $color;
+        @include ease();
+      }
     }
-}
-
-h1,
-.footer {
-    margin-bottom: 0;
-    color: $bg-color;
-
-}
-
-h1 {
-    padding-bottom: 3rem;
+  }
 }
 
 // Map
+.map-text {
+  color: $bg-color;
+  margin: auto;
+}
+
 .nav-link:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .map-container {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
-
+  iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }
 
-@import 'mobile';
+// About Us Map
+iframe {
+  height: 20%;
+  width: 100%;
+  border: 5px solid $color;
+  border-radius: 10px;
+}
+
+.card {
+  margin: 1rem;
+  color: $bg-color;
+}
+
+.icons {
+  margin-bottom: 1rem;
+
+  a {
+    color: $color;
+    margin-right: 0.5rem;
+
+    &:hover {
+      color: $s-color;
+      @include ease();
+    }
+  }
+}
+
+// Price table
+.mainTable {
+  &:hover {
+    cursor: default;
+  }
+
+  table {
+    border-radius: 10px;
+  }
+}
+
+/*
+select {
+  -webkit-appearance: none;
+}
+*/
+.footer {
+  height: 1.5rem;
+  margin-bottom: 0;
+  color: $color;
+  margin-left: auto;
+}
+
+@import "mobile";

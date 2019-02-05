@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./media/bootstrap/bootstrap.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Project A</title>
+</head>
+
+<body class="bg">
+
+  <div>
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="studios.html">Studios</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="price.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="time.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="modal" data-target="#modalGM">Location</a>
+            </li>
+            <!--Modal: Name-->
+            <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-md" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                  <!--Body-->
+                  <div class="modal-body mb-0 p-0 w-100">
+                    <!--Google map-->
+                    <div id="map-container" class="z-depth-1-half map-container">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <!--Footer-->
+                  <p class="map-text">Rue de Rivoli, 75001 Paris</p>
+                  <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary btn-md">Save location
+                      <i class="fas fa-map-marker-alt ml-1"></i>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary btn-md" data-dismiss="modal">Close
+                      <i class="fas fa-times ml-1"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Modal-->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+
+  <main class="studios">
+    <h1 class="container text-center headers display-4 p-2 border-bottom">Studios</h1>
+    <div class="container">
+      <div class="col">
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioA.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card Title A</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal A-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioA">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioA" tabindex="-1" role="dialog" aria-labelledby="ModalStudioALabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title " id="ModalStudioALabel">Studio A</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Studio A</th>
+                            <td>12.5€</td>
+                            <td>25m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier: Vox AC 30 </li>
+                        <li>Guitars: Fender Telecaster</li>
+                        <li>Bass Amplifier: Gallien-Krueger MB Fusion.</li>
+                        <li>Bass: ESP F-104.</li>
+                        <li>Drum: Pearl Export</li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of Modal-->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioB.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card Title B</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal B-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioB">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioB" tabindex="-1" role="dialog" aria-labelledby="ModalStudioBLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalLabelS1">Studio B</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">B</th>
+                            <td>15€</td>
+                            <td>29m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier: Fender 5E3 Deluxe</li>
+                        <li>Guitars:Ibanez Roadcore RC365H </li>
+                        <li>Bass Amplifier:Ampeg SVT-7 Stack</li>
+                        <li>Bass: Squier Classic Vibe Precision '50s Bass Guitar</li>
+                        <li>Drum: Gretsch Renown</li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of Modal-->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioC.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title C</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioC">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioC" tabindex="-1" role="dialog" aria-labelledby="ModalStudioCLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalStudioCLabel">Modal title C</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">C</th>
+                            <td>12€</td>
+                            <td>26m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier: Mesa/Boogie Dual Rectifier</li>
+                        <li>Guitars: Squier Bullet Stratocaster SSS</li>
+                        <li>Bass Amplifier:rkbass Blackline Little Mark 250.</li>
+                        <li>Bass: Ibanez SR400QM</li>
+                        <li>Drum: Sonor SQ1.</li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of Modal-->
+
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioD.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title D</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioD">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioD" tabindex="-1" role="dialog" aria-labelledby="ModalStudioDLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalStudioDLabel">Modal title D</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">D</th>
+                            <td>11.5€</td>
+                            <td>21m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier:Marshall JCM800</li>
+                        <li>Guitars:Fender Stratocaster American Standard </li>
+                        <li>Bass Amplifier: Fender Rumble 500.
+                        </li>
+                        <li>Bass: Fender Modern Player Dimension Bass</li>
+                        <li>Drum: Mapex Saturn V.</li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of Modal-->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioE.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title E</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioE">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioE" tabindex="-1" role="dialog" aria-labelledby="ModalStudioELabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalStudioELabel">Modal title E</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">E</th>
+                            <td>12€</td>
+                            <td>27m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier: Marshall 1959 Super Lead 100, Roland JC-120.</li>
+                        <li>Guitars: Gretsch G5422TDC Electromatic.</li>
+                        <li>Bass Amplifier: Hartke HD500.</li>
+                        <li>Bass: Washburn Taurus T24.</li>
+                        <li>Drum: Yamaha Stage Custom Birch.</li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--end of Modal-->
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img src="./media/studios/studioF.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title F</h5>
+              <p class="card-text">Basic info about the studio and gear.</p>
+              <!--Modal-->
+              <button type="button" href="#" class="btn btn-primary" data-toggle="modal" data-target="#ModalStudioF">Find
+                out more</button>
+              <div class="modal fade" id="ModalStudioF" tabindex="-1" role="dialog" aria-labelledby="ModalStudioFLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="ModalStudioFLabel">Modal title F</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+
+                    </div>
+                    <div class="modal-body">
+                      <table class="table table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th scope="col">Studio</th>
+                            <th scope="col">Price/h</th>
+                            <th scope="col">Square Meters</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Studio F</th>
+                            <td>12.5€</td>
+                            <td>22m<sup>2</sup></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="container modal-body">
+                      <ul>
+                        <li>Guitar Amplifier: Fender Twin Reverb, Roland JC-120</li>
+                        <li>Guitars: Fender Stratocaster American Standard, ESP LTD EC-1000</li>
+                        <li>Bass Amplifier: Behringer Ultrabass BXD3000H, Orange Amplifiers
+                          Crush Bass 50</li>
+                        <li>Bass: Epiphone Thunderbird, Washburn Taurus T24</li>
+                        <li>Drum: Ludwig Breakbeats </li>
+                      </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                      <a href="#">
+                        <button type="button" class="btn btn-primary">Book Now!</button></a>
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end of Modal-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    </div>
+  </main>
+  <footer class="mt-3">
+    <nav class="navbar fixed-bottom bg-dark">
+      <p class="footer">&copy; Miguel Bento 2019</p>
+    </nav>
+  </footer>
+
+  <!--JS-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
