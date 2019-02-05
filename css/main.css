@@ -75,7 +75,7 @@ main .container .row a {
   border-radius: 10px; }
 
 iframe {
-  width: 20%; }
+  height: 2rem; }
 
 .footer {
   height: 1.5rem;
