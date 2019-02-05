@@ -16,26 +16,28 @@
 
     <div>
         <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+                <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+                <button class="btn btn-outline-light" id="book-now">Book Now!</button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
+                    <ul class="navbar-nav mr-auto ">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="studios.html">Studios</a>
                         </li>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" href="price.html">Pricing</a>
                         </li>
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" href="time.html">Schedule</a>
                         </li>
                         <li class="nav-item active">
@@ -44,6 +46,7 @@
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
                         </li>
+
                         <!--Modal: Name-->
                         <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                             aria-hidden="true">
@@ -75,7 +78,6 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn btn-outline-light ">Book Now!</button>
             </nav>
         </header>
     </div>

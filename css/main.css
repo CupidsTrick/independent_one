@@ -14,6 +14,12 @@ body {
   overflow: auto;
   font-family: 'Work Sans', sans-serif; }
 
+#navbar {
+  display: block; }
+
+#book-now {
+  float: right; }
+
 .bg {
   background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed; }
 
@@ -79,3 +85,7 @@ main .container .row a {
   margin-bottom: 0;
   color: #e1f1ef;
   margin-left: auto; }
+
+@media screen and (max-width: 500px) {
+  #navbar {
+    display: block; } }

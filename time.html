@@ -14,71 +14,70 @@
 
 <body class="bg">
 
-    <div>
-        <header>
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="studios.html">Studios</a>
-                        </li>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link" href="price.html">Pricing</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="time.html">Schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
-                        </li>
-                        <!--Modal: Name-->
-                        <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-md" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Body-->
-                                    <div class="modal-body mb-0 p-0 w-100">
-                                        <!--Google map-->
-                                        <div id="map-container" class="z-depth-1-half map-container">
-                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"
-                                                width="600" height="450" frameborder="0" style="border:0"
-                                                allowfullscreen></iframe>
-                                        </div>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="navbar">
+            <button class="navbar-toggler" id="toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="btn btn-outline-light" id="book-now">Book Now!</button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studios.html">Studios</a>
+                    </li>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="price.html">Pricing</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="time.html">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
+                    </li>
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-md" role="document">
+                            <!--Content-->
+                            <div class="modal-content">
+                                <!--Body-->
+                                <div class="modal-body mb-0 p-0 w-100">
+                                    <!--Google map-->
+                                    <div id="map-container" class="z-depth-1-half map-container">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"
+                                            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                                     </div>
-                                    <!--Footer-->
-                                    <p class="map-text">Rue de Rivoli, 75001 Paris</p>
-                                    <div class="modal-footer justify-content-center">
-                                        <button type="button" class="btn btn-primary btn-md">Save location
-                                            <i class="fas fa-map-marker-alt ml-1"></i>
-                                        </button>
-                                        <button type="button" class="btn btn-outline-primary btn-md" data-dismiss="modal">Close
-                                            <i class="fas fa-times ml-1"></i>
-                                        </button>
-                                    </div>
+                                </div>
+                                <!--Footer-->
+                                <p class="map-text">Rue de Rivoli, 75001 Paris</p>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-primary btn-md">Save location
+                                        <i class="fas fa-map-marker-alt ml-1"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-primary btn-md" data-dismiss="modal">Close
+                                        <i class="fas fa-times ml-1"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-                        <!--Modal-->
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn btn-outline-light ">Book Now!</button>
-            </nav>
-        </header>
+                    </div>
+                    <!--Modal-->
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     </div>
 
 
