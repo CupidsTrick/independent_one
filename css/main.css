@@ -56,9 +56,8 @@ main .container .row a {
     position: absolute; }
 
 .map {
-  height: 20%;
   width: 100%;
-  border: 5px solid #e1f1ef;
+  border: 3px solid #e1f1ef;
   border-radius: 10px; }
 
 .card {
@@ -90,8 +89,7 @@ main .container .row a {
 .footer {
   height: 1.5rem;
   margin-bottom: 0;
-  color: #e1f1ef;
-  margin-left: auto; }
+  color: #e1f1ef; }
 
 @media screen and (max-width: 500px) {
   #bg {
