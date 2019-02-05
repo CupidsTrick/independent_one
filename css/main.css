@@ -6,7 +6,6 @@
 .headers {
   color: #e1f1ef; }
 
-html,
 body {
   background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed;
   color: #343a40;
@@ -95,10 +94,7 @@ main .container .row a {
 
 @media screen and (max-width: 500px) {
   #navbar {
-    display: block; }
-  html,
-  body {
-    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed; } }
+    display: block; } }
 
 .card {
   margin: 1rem auto 0.5rem auto; }
