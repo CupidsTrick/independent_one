@@ -77,7 +77,8 @@ iframe {
 .reCaptcha {
   max-width: 3rem !important;
   max-height: 2rem !important;
-  height: 1rem; }
+  height: 1rem;
+  border: none; }
 
 .footer {
   height: 1.5rem;
