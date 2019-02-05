@@ -130,7 +130,14 @@
                 <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-                <p onclick="ClipBoard()" id="CopyText" class="headers">+33 45 74 95 62</p>
+            </div>
+            <div class="container headers" onclick="copiedToClipboard()">
+                <p id="phone-number" onclick="copyToClipboard('#phone-number')">
+                    +33 59 74 86 21<span id="number-copied" data-toggle="tooltip" data-placement="top" title="Number copied to clipboard">
+                        Copied!</span>
+                </p>
+
+
             </div>
         </div>
         <br><br>
@@ -150,13 +157,25 @@
         $('.carousel').carousel({
             interval: 2000
         })
-
-        function ClipBoard() {
-            const copyTxt = document.getElementById("CopyText");
-            copyTxt.select();
-            document.execCommand("copy");
-
+        // Clipboard
+        function copiedToClipboard() {
+            document.getElementById("number-copied").style.display = "initial";
         }
+
+        function copyToClipboard(element) {
+            let $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+        }
+        // End of Clipboard
+
+        var s = document.getElementById("number-copied").style;
+        s.opacity = 1;
+        (function fade() {
+            (s.opacity -= .19) < 0 ? s.display = "none" : setTimeout(fade, 700)
+        })();
     </script>
 </body>
 

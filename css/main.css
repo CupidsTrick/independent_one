@@ -83,6 +83,10 @@ main .container .row a {
 .headers table {
   border-radius: 10px; }
 
+#number-copied {
+  display: none;
+  color: #cb902e; }
+
 .footer {
   height: 1.5rem;
   margin-bottom: 0;
