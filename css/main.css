@@ -49,12 +49,14 @@ main .container .row a {
     width: 100%;
     position: absolute; }
 
+/*
 iframe {
   height: 20%;
   width: 100%;
-  border: 5px solid #e1f1ef;
-  border-radius: 10px; }
-
+  border: 5px solid $color;
+  border-radius: 10px;
+}
+*/
 .card {
   margin: 1rem;
   color: #343a40; }
@@ -74,7 +76,7 @@ iframe {
 .mainTable table {
   border-radius: 10px; }
 
-.reCaptcha {
+.g-recaptcha {
   max-width: 3rem !important;
   max-height: 2rem !important;
   height: 1rem;
