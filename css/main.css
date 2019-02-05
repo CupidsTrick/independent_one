@@ -74,11 +74,8 @@ main .container .row a {
 .mainTable table {
   border-radius: 10px; }
 
-.g-recaptcha {
-  max-width: 3rem !important;
-  max-height: 2rem !important;
-  height: 1rem;
-  border: none; }
+iframe {
+  width: 20%; }
 
 .footer {
   height: 1.5rem;
