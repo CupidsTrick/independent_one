@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+* {
+  text-decoration: none;
+  box-sizing: border-box; }
+
+.headers {
+  color: #e1f1ef; }
+
+body {
+  color: #343a40;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: 'Work Sans', sans-serif; }
+
+.bg {
+  background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed; }
+
+.carousel .carousel-inner {
+  height: 35vh; }
+
+.bg header .navbar .nav-link:hover {
+  transition: all 0.5s ease 0s; }
+  .bg header .navbar .nav-link:hover:hover {
+    color: #cb902e; }
+
+main .container .row a {
+  text-decoration: none;
+  color: #e1f1ef;
+  transition: all 0.5s ease 0s; }
+
+.map-text {
+  color: #343a40;
+  margin: auto; }
+
+.nav-link:hover {
+  cursor: pointer; }
+
+.map-container {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0; }
+  .map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+
+iframe {
+  height: 20%;
+  width: 100%;
+  border: 5px solid #e1f1ef;
+  border-radius: 10px; }
+
+.card {
+  margin: 1rem;
+  color: #343a40; }
+
+.icons {
+  margin-bottom: 1rem; }
+  .icons a {
+    color: #e1f1ef;
+    margin-right: 0.5rem; }
+    .icons a:hover {
+      color: #cb902e;
+      transition: all 0.5s ease 0s; }
+
+.mainTable:hover {
+  cursor: default; }
+
+.mainTable table {
+  border-radius: 10px; }
+
+/*
+select {
+  -webkit-appearance: none;
+}
+*/
+.footer {
+  height: 1.5rem;
+  margin-bottom: 0;
+  color: #e1f1ef;
+  margin-left: auto; }

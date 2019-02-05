@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./media/bootstrap/bootstrap.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Project A</title>
+</head>
+
+<body class="bg">
+
+    <div>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studios.html">Studios</a>
+                        </li>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="time.html">Schedule</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
+                        </li>
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-md" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0 w-100">
+                                        <!--Google map-->
+                                        <div id="map-container" class="z-depth-1-half map-container">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"></iframe>
+                                        </div>
+                                    </div>
+
+                                    <!--Footer-->
+                                    <p class="map-text">Rue de Rivoli, 75001 Paris</p>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-primary btn-md">Save location
+                                            <i class="fas fa-map-marker-alt ml-1"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary btn-md" data-dismiss="modal">Close
+                                            <i class="fas fa-times ml-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal-->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <!--Google map-->
+        <div class="container">
+            <div class="container">
+                <h1 class="container headers display-4 p-2">Find Us</h1>
+                <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"></iframe>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <img src="./media/profiles/profileLady.jpeg" alt="John" style="width:100%">
+                        <div class="card-body">
+                            <h1>Jane Doe</h1>
+                            <p class="title">CEO & Founder, Example</p>
+                            <p>Harvard University</p>
+                            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="card">
+                        <img src="./media/profiles/profileMr.jpeg" class="card-img-top" alt="John" style="width:100%">
+                        <div class="card-body ">
+                            <h1 class="card-title">John Doe</h1>
+                            <p class="title">CEO & Founder, Example</p>
+                            <p>Harvard University</p>
+                            <a href="#"><i class="fab fa-twitter fa-2x "></i></a>
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Form-->
+
+        <form class="needs-validation container headers" novalidate>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value=""
+                        required>
+                    <div class="invalid-feedback">
+                        Please choose a first name.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value=""
+                        required>
+                    <div class="invalid-feedback">
+                        Please choose a last name.
+                    </div>
+                    <div class="valid-feedback">
+                        Thank you!
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Contact</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Email Address"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Please choose a valid email address.
+                        </div>
+                        <div class="valid-feedback">
+                            Thanks!
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+        <br><br>
+    </main>
+    <!--End of Form-->
+    <br><br>
+
+
+    </main>
+    <footer>
+        <nav class="navbar fixed-bottom bg-dark">
+            <p class="footer">&copy; Miguel Bento 2019</p>
+        </nav>
+    </footer>
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./media/bootstrap/bootstrap.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Project A</title>
+</head>
+
+<body class="bg">
+
+    <div>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a class="navbar-brand" href="#"><i class="fab fa-connectdevelop"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studios.html">Studios</a>
+                        </li>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="time.html">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#modalGM">Address</a>
+                        </li>
+                        <!--Modal: Name-->
+                        <div class="modal fade" id="modalGM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-md" role="document">
+                                <!--Content-->
+                                <div class="modal-content">
+                                    <!--Body-->
+                                    <div class="modal-body mb-0 p-0 w-100">
+                                        <!--Google map-->
+                                        <div id="map-container" class="z-depth-1-half map-container">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8739172815394!2d2.3354553158274514!3d48.86061460850403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671d877937b0f%3A0xb975fcfa192f84d4!2sLouvre+Museum!5e0!3m2!1sen!2sfr!4v1548513887637"
+                                                width="600" height="450" frameborder="0" style="border:0"
+                                                allowfullscreen></iframe>
+                                        </div>
+                                    </div>
+                                    <!--Footer-->
+                                    <p class="map-text">Rue de Rivoli, 75001 Paris</p>
+                                    <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-primary btn-md">Save location
+                                            <i class="fas fa-map-marker-alt ml-1"></i>
+                                        </button>
+                                        <button type="button" class="btn btn-outline-primary btn-md" data-dismiss="modal">Close
+                                            <i class="fas fa-times ml-1"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Modal-->
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+    </div>
+
+
+    <main>
+        <h1 class="container headers text-center display-4 p-2 border-bottom">Schedule</h1>
+
+        <div class="container mainTable">
+            <table class="table table-hover table-dark mt-3" id="priceTable">
+                <thead class="table">
+                    <tr class="bg-primary">
+                        <th scope="col">Days</th>
+                        <th scope="col">Opening Hours</th>
+                        <th scope="col">Closing Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Monday</th>
+                        <td>9:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Tuesday</th>
+                        <td>9:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Wednesday</th>
+                        <td>9:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Thursday</th>
+                        <td>9:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Friday</th>
+                        <td>9:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Saturday</th>
+                        <td>10:00</td>
+                        <td>19:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sunday</th>
+                        <td>11:00</td>
+                        <td>18:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="btn btn-primary">Book Now!</button>
+        </div>
+    </main>
+    <footer>
+        <nav class="navbar fixed-bottom bg-dark">
+            <p class="footer">&copy; Miguel Bento 2019</p>
+        </nav>
+    </footer>
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
