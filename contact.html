@@ -120,10 +120,10 @@
 
         <!--Form-->
 
-        <form name="Contact" method="POST" data-netlify="true" class="needs-validation container headers">
+        <form name="Contact" method="POST" data-netlify="true" class="needs-validation container headers" novalidate>
             <div class="form-group">
-                <label for="FormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" name="textArea" id="FormControlTextarea1" rows="3"></textarea>
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="form-row">
                 <div class="col-md-4 mb-3">
@@ -154,7 +154,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                         </div>
-                        <input type="text" class="form-control" name="Email" id="validationCustomUsername" placeholder="Email Address"
+                        <input type="text" class="form-control" name="email" id="validationCustomUsername" placeholder="Email Address"
                             aria-describedby="inputGroupPrepend" required>
                         <div class="invalid-feedback">
                             Please choose a valid email address.
@@ -168,7 +168,7 @@
             </div>
             <div class="form-group">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" name="termsNconditions" value="" id="invalidCheck"
+                    <input class="form-check-input" name="AgreedToTermsAndConditions" type="checkbox" value="" id="invalidCheck"
                         required>
                     <label class="form-check-label" for="invalidCheck">
                         Agree to terms and conditions
@@ -178,11 +178,10 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="row">
                 <button class="btn btn-primary col-sm-2" type="submit">Submit </button>
-                <div data-netlify-recaptcha="true" class="col-sm-3 offset-md-4 captcha"></div>
+                <iframe data-netlify-recaptcha="true" class="col-sm-3 offset-md-3 captcha"></iframe>
             </div>
-
         </form>
         <br><br>
 
@@ -211,10 +210,10 @@
             'use strict';
             window.addEventListener('load', function () {
                 // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
+                const forms = document.getElementsByClassName('needs-validation');
                 // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
+                let validation = Array.prototype.filter.call(forms, (form) => {
+                    form.addEventListener('submit', (event) => {
                         if (form.checkValidity() === false) {
                             event.preventDefault();
                             event.stopPropagation();
