@@ -6,6 +6,12 @@
 .headers {
   color: #e1f1ef; }
 
+.bg-color {
+  color: #343a40; }
+
+.bg-s-color {
+  color: #cb902e; }
+
 #bg {
   background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed center; }
 
@@ -82,16 +88,14 @@ main .container .row a {
 .headers table {
   border-radius: 10px; }
 
-#number-copied {
-  display: none;
-  color: #cb902e; }
-
 .footer {
   height: 1.5rem;
   margin-bottom: 0;
   color: #e1f1ef; }
 
 @media screen and (max-width: 500px) {
+  body h1 {
+    font-size: 2.7rem !important; }
   #bg {
     background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studioIOS.jpeg);
     background-attachment: scroll; }
