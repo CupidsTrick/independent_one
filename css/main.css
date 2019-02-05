@@ -65,14 +65,22 @@ main .container .row a {
   margin: 1rem;
   color: #343a40; }
 
-.icons {
-  margin-bottom: 1rem; }
-  .icons a {
+.icons, .icons a:hover {
+  color: #343a40;
+  margin-right: 0.5rem; }
+  .icons:hover, .icons a:hover {
+    color: #cb902e;
+    transition: all 0.5s ease 0s; }
+
+.icons, .icons a:hover {
+  color: #343a40;
+  margin-right: 0.5rem; }
+  .icons:hover, .icons a:hover {
+    color: #cb902e;
+    transition: all 0.5s ease 0s; }
+  .icons a, .icons a:hover a {
     color: #e1f1ef;
     margin-right: 0.5rem; }
-    .icons a:hover {
-      color: #cb902e;
-      transition: all 0.5s ease 0s; }
 
 .mainTable:hover {
   cursor: default; }
