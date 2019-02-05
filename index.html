@@ -130,11 +130,9 @@
                 <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
             </div>
-            <div class="container headers" onclick="copiedToClipboard()">
-                <p id="phone-number" onclick="copyToClipboard('#phone-number')" data-toggle="tooltip" data-placement="left"
-                    title="Click number to copy">
-                    +33 59 74 86 21<span id="number-copied">
-                    </span>
+            <div class="container headers" >
+                <p id="phone-number">
+                    +33 59 74 86 21
                 </p>
             </div>
         </div>
@@ -154,38 +152,7 @@
     <script>
         $('.carousel').carousel({
             interval: 2000
-        })
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-        // Clipboard
-        const numberCopied = document.getElementById("number-copied");
-
-        function copiedToClipboard() {
-            numberCopied.style.display = "initial";
-        }
-
-        function copyToClipboard(element) {
-            let $temp = $("<input>");
-            $("body").append($temp);
-            $temp.val($(element).text()).select();
-            document.execCommand("copy");
-            $temp.remove();
-        }
-        // End of Clipboard
-        function fadeOutEffect() {
-            var fadeEffect = setInterval(function () {
-                if (!numberCopied.style.opacity) {
-                    numberCopied.style.opacity = 1;
-                }
-                if (numberCopied.style.opacity > 0) {
-                    numberCopied.style.opacity -= 0.1;
-                } else {
-                    clearInterval(fadeEffect);
-                }
-            }, 200);
-        }
-        numberCopied.addEventListener('click', fadeOutEffect);
+        })        
     </script>
 </body>
 
