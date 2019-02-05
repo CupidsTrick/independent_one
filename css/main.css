@@ -98,9 +98,7 @@ main .container .row a {
     display: block; }
   html,
   body {
-    background-position: inherit;
-    background-size: contain;
-    background: fixed; } }
+    background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed; } }
 
 .card {
   margin: 1rem auto 0.5rem auto; }
