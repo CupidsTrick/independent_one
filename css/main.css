@@ -101,10 +101,7 @@ main .container .row a {
   #navbar {
     display: block; }
   #bottomIcons {
-    margin: auto; }
-  .wider {
-    margin-left: -3rem;
-    margin-right: -3rem; } }
+    margin: auto; } }
 
 .card {
   margin: 1rem auto 0.5rem auto; }
