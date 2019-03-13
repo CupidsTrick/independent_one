@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans");
 * {
-  text-decoration: none;
   box-sizing: border-box; }
 
 .headers {
@@ -12,7 +11,7 @@
 .bg-s-color {
   color: #cb902e; }
 
-#bg {
+.bg {
   background: linear-gradient(rgba(52, 58, 64, 0.8), rgba(52, 58, 64, 0.8)), url(../media/studio.jpeg) no-repeat fixed center; }
 
 body {
@@ -102,7 +101,14 @@ main .container .row a {
   #navbar {
     display: block; }
   #bottomIcons {
-    margin: auto; } }
+    margin: auto; }
+  .wider {
+    margin-left: -3rem;
+    margin-right: -3rem; } }
 
 .card {
   margin: 1rem auto 0.5rem auto; }
+
+@media screen and (max-width: 768px) {
+  .card {
+    display: grid; } }
